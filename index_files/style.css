@@ -1,0 +1,227 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #f4b400;
+}
+
+/* Home styles */
+.home {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.home__title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home__subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4b400;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home__button:hover {
+  background-color: #e69300;
+}
+
+/* About styles */
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  
+}
+
+/* Skills styles */
+.skills {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.skills__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skills__item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Projects styles */
+.projects {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.project__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project__description {
+  font-size: 16px;
+}
+
+/* Contact styles */
+.contact {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact__form button {
+  background-color: #f4b400;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  
+  
+}
+
+.contact__form button:hover {
+  background-color: #e69300;
+}
+
+.contact__social {
+  margin-top: 20px;
+}
+
+.contact__icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact__icon:hover {
+  color: #f4b400;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer__icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.footer__contact-info {
+  list-style: none;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav__menu {
+    margin-top: 10px;
+  }
+
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Add more media queries for other breakpoints as needed */
